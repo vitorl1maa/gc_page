@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: "Inter";
+}
+
+.container-layout {
+  @apply px-5 md:px-24 py-5
+}
+
+.btn-default {
+  @apply bg-gradient-to-b from-primary from-25% to-secondary text-white w-40 h-10 rounded-full
+}
