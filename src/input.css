@@ -9,7 +9,7 @@
 }
 
 .container-layout {
-  @apply px-5 md:px-24 py-5
+  @apply px-5 md:px-36 py-4
 }
 
 .btn-default {
