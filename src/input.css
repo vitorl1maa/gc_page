@@ -15,3 +15,16 @@
 .btn-default {
   @apply bg-gradient-to-b from-primary from-25% to-secondary text-white w-40 h-10 rounded-full
 }
+
+
+/* CAROUSEL */
+
+.shop-detail {
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 80px;
+}
+
+.carousel {
+  @apply flex overflow-hidden space-x-4
+}
+
