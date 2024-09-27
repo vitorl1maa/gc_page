@@ -13,7 +13,7 @@
 }
 
 .btn-default {
-  @apply bg-gradient-to-b from-primary from-25% to-secondary text-white w-40 h-10 rounded-full
+  @apply bg-gradient-to-b from-primary from-25% to-secondary text-white w-40 h-10 rounded-full 
 }
 
 

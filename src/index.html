@@ -18,10 +18,10 @@
     <img src="./images/Logos/logo_gc-green.svg" alt="Logo">
 
     <nav class=" flex gap-8 items-center">
-      <ul class="font-medium cursor-pointer">Sobre</ul>
-      <ul class="font-medium cursor-pointer">Produtos</ul>
-      <ul class="font-medium cursor-pointer">Serviços</ul>
-      <ul class="font-medium cursor-pointer">Softwares</ul>
+      <ul class="font-medium cursor-pointer hover:text-primary">Sobre</ul>
+      <ul class="font-medium cursor-pointer hover:text-primary">Produtos</ul>
+      <ul class="font-medium cursor-pointer hover:text-primary">Serviços</ul>
+      <ul class="font-medium cursor-pointer hover:text-primary">Softwares</ul>
       <ul>
         <button class="btn-default">Fale conosco</button>
       </ul>
@@ -42,7 +42,8 @@
           garantir a melhor segurança e eficiência para sua empresa!
         </p>
 
-        <button class="mt-8 text-primary bg-white w-60 h-14 rounded-full flex justify-center items-center gap-2">
+        <button
+          class="mt-8 text-primary bg-white w-60 h-14 rounded-full flex justify-center items-center gap-2 hover:bg-newBlack hover:text-white">
           Solicitar orçamento
           <i class="ph ph-arrow-right text-2xl"></i>
         </button>
@@ -128,7 +129,7 @@
                 REP iDClass
               </p>
 
-              <button class="btn-default">Solicitar orçamento</button>
+              <button class="btn-default ">Solicitar orçamento</button>
             </div>
           </div>
 
@@ -274,13 +275,19 @@
       </div>
 
       <div class="mt-12">
-        <button class="w-48 py-2 border border-primary rounded-full text-primary">Ver mais produtos</button>
+        <button
+          class="w-48 py-2 border border-primary rounded-full text-primary hover:bg-secondary hover:text-white">Ver mais
+          produtos</button>
       </div>
 
     </section>
 
-    <section>
-
+    <section class="flex flex-col justify-center items-center">
+      <h3 class="mt-80 flex gap-5 text-2xl font-bold"> <span><i
+            class="ph-fill ph-circle text-[10px] text-secondary"></i></span>
+        Produtos populares
+        <span><i class="ph-fill ph-circle text-[10px] text-secondary"></i></span>
+      </h3>
     </section>
   </main>
 </body>
