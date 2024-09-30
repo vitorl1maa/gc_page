@@ -9,6 +9,7 @@
   <link href="./output.css" rel="stylesheet">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <script src="./js/carousel.js" defer></script>
+  <script src="./js/script.js" defer></script>
 
 </head>
 
@@ -92,7 +93,7 @@
       </div>
     </section>
 
-    <!-------- PRODUCTS -------->
+    <!-------- PRODUTOS -------->
     <section class="w-full h-full flex flex-col items-center mt-96 ">
       <h3 class="mt-80 flex gap-5 text-2xl font-bold"> <span><i
             class="ph-fill ph-circle text-[10px] text-secondary"></i></span>
@@ -105,7 +106,7 @@
       </p>
 
       <!-------- CAROSEUL ------->
-      <div class="relative w-full max-w-4xl mx-auto">
+      <div class="relative w-full max-w-5xl mx-auto">
         <!-- Botão Anterior -->
         <button id="prevBtn"
           class="w-10 h-10 absolute -left-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full z-10 shadow-xl">
@@ -113,7 +114,7 @@
         </button>
 
         <!-- Container do Carrossel -->
-        <div class="carousel ">
+        <div id="carouselContent" class="carousel ">
           <div class="w-60 h-[405px] bg-newWhite rounded-2xl flex flex-col items-center text-center mt-12 shrink-0">
             <div class="flex justify-end w-full">
               <span
@@ -275,19 +276,77 @@
       </div>
 
       <div class="mt-12">
-        <button
-          class="w-48 py-2 border border-primary rounded-full text-primary hover:bg-secondary hover:text-white">Ver mais
+        <button id="showProducts"
+          class="w-48 py-2 border border-primary rounded-full text-primary hover:bg-secondary hover:text-white">Ver
+          mais
           produtos</button>
       </div>
 
+
     </section>
 
-    <section class="flex flex-col justify-center items-center">
-      <h3 class="mt-80 flex gap-5 text-2xl font-bold"> <span><i
+    <!-------- SERVIÇOS -------->
+    <section class="w-full h-full  flex flex-col justify-center items-center">
+      <h3 class="mt-32 flex gap-5 text-2xl font-bold"> <span><i
             class="ph-fill ph-circle text-[10px] text-secondary"></i></span>
-        Produtos populares
+        Serviços especializados
         <span><i class="ph-fill ph-circle text-[10px] text-secondary"></i></span>
       </h3>
+
+      <p>
+        Serviços especializados para atender todas as suas demandas
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2  w-full h-full justify-items-center justify-center gap-5 mt-20">
+        <div class="w-full h-[460px] bg-primary text-white p-5 rounded-xl mt-5">
+          <img class="w-full" src="./images/Serviços/img_assistencia.png" alt="Assistência técnica">
+
+          <h3 class="text-2xl font-bold py-5">Assistência técnica</h3>
+          <p class="text-sm leading-6">
+            Nossa assistência técnica é especializada para manutenção preventiva e corretiva em equipamentos de Ponto
+            Eletrônico
+            Biométrico/Facial, Cartográficos, Controle de Acesso, Catracas, Estacionamentos e Sinalização. Contamos com
+            profissionais treinados nos principais fabricantes do país. Temos peças de reposição a pronta entrega e
+            suporte técnico
+            para o cliente.
+          </p>
+        </div>
+
+        <div class="w-full h-[460px] bg-newWhite text-newBlack p-5 rounded-xl">
+          <img class="w-full" src="./images/Serviços/img_suporte.png" alt="Suporte Técnico">
+
+          <h3 class="text-2xl font-bold py-5">Suporte Técnico</h3>
+          <p class="text-sm leading-6 text-newBlack/65">
+            Ao adquirir uma solução completa de ponto ou acesso de nossa empresa na modalidade de locação, todos
+            clientes GC terão
+            direito a suporte remoto ilimitado para tirar suas dúvidas de utilização dos softwares e equipamentos.
+          </p>
+        </div>
+
+        <div class="w-full bg-newWhite text-newBlack p-5 rounded-xl">
+          <img class="w-full" src="./images/Serviços/img_atendimento.png" alt="Atendimento local">
+
+          <h3 class="text-2xl font-bold py-5">Atendimento local</h3>
+          <p class="text-sm leading-6 text-newBlack/65">
+            Contamos com um corpo técnico qualificado para solucionar presencialmente o problema do seu ponto eletrônico
+            ou controle
+            de acesso em Juiz de Fora, Zona da Mata e Macro Região e também atendemos remotamente em todo o Brasil.
+          </p>
+        </div>
+
+        <div class="w-full h-[500px] bg-newWhite text-newBlack p-5 rounded-xl ">
+          <img src="./images/Serviços/img_suprimentos.png" alt="Peças e suprimentos">
+
+          <h3 class="text-2xl font-bold py-5">Peças e suprimentos</h3>
+          <p class="text-sm leading-6 text-newBlack/65">
+            Somos distribuidores de peças e suprimentos para relógios de ponto cartográfico, equipamentos de ponto
+            eletrônico,
+            biométrico, facial, controladores de acesso, catracas, estacionamentos e sinalização. Possuímos amplo
+            estoque para
+            reposição imediata, para que seu equipamento esteja sempre em ótimas condições.
+          </p>
+        </div>
+      </div>
     </section>
   </main>
 </body>
