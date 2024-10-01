@@ -9,11 +9,19 @@
 }
 
 .container-layout {
-  @apply px-5 md:px-36 py-4
+  @apply px-5 md:px-44 py-4
 }
 
 .btn-default {
   @apply bg-gradient-to-b from-primary from-25% to-secondary text-white w-40 h-10 rounded-full 
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 
@@ -26,5 +34,18 @@
 
 .carousel {
   @apply flex overflow-hidden space-x-4
+}
+
+/* Adicione ao seu CSS */
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+  /* Cor das setas */
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #000;
+  /* Cor dos indicadores */
 }
 

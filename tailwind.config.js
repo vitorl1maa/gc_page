@@ -9,6 +9,9 @@ module.exports = {
         newWhite: "#F4F7FA",
         newBlack: "#161C2D",
       },
+      backgroundImage: {
+        "hero-pattern": "url('./images/Banner/CTA.png')",
+      },
     },
   },
   plugins: [],
