@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./styles/global.css" rel="stylesheet">
   <title>Document</title>
   <link href="./output.css" rel="stylesheet">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -12,13 +11,12 @@
   <script src="./js/script.js" defer></script>
 
   <!-- Slick CSS -->
-  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-
-  <!-- Slick JS -->
-
-
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -343,7 +341,7 @@
         </div>
 
         <div class="w-full h-[500px] bg-newWhite text-newBlack p-5 rounded-xl ">
-          <img src="./images/Serviços/img_suprimentos.png" alt="Peças e suprimentos">
+          <img class="w-full" src="./images/Serviços/img_suprimentos.png" alt="Peças e suprimentos">
 
           <h3 class="text-2xl font-bold py-5">Peças e suprimentos</h3>
           <p class="text-sm leading-6 text-newBlack/65">
@@ -437,7 +435,7 @@
         </div>
       </div>
 
-      <div class="bg-hero-pattern w-full h-80 bg-cover flex justify-center items-center mt-20">
+      <div class="bg-hero-pattern w-full h-96 bg-contain bg-no-repeat flex justify-center items-center mt-20">
         <div class="flex items-center justify-center flex-col text-center">
           <span class="uppercase text-white text-[10px] font-bold" style="letter-spacing: .2rem;">Solicite um
             orçamento</span>
@@ -454,61 +452,74 @@
         </div>
       </div>
 
-      <div class="w-full slide flex gap-5 justify-center items-center mt-20">
-        <div class="slick-carousel">
-          <div>your content</div>
-          <div>your content</div>
-          <div>your content</div>
-        </div>
-
-        <!-- <div class="w-28">
-          <img class="w-full" src="./images/Clientes/logo_abc.svg" alt="abc logo">
+      <div class="slick-carousel w-full mt-20 flex justify-around items-center">
+        <div class="w-28">
+          <img class="w-32" src="./images/Clientes/logo_abc.svg" alt="abc logo">
         </div>
 
         <div class="w-28">
-          <img class="w-full" src="./images/Clientes/logo_acotel.png" alt="acotel logo">
+          <img class="w-32" src="./images/Clientes/logo_acotel.png" alt="acotel logo">
         </div>
 
         <div class="w-28">
-          <img class="w-full" src="./images/Clientes/logo_albert-sabin.png" alt="albert sabin logo">
+          <img class="w-32" src="./images/Clientes/logo_albert-sabin.png" alt="albert sabin logo">
         </div>
 
         <div class="w-28">
-          <img class="w-full" src="./images/Clientes/logo_bahamas.svg" alt="bahamas logo">
+          <img class="w-32" src="./images/Clientes/logo_bahamas.svg" alt="bahamas logo">
         </div>
 
         <div class="w-28">
-          <img class="w-full" src="./images/Clientes/logo_benassi.png" alt="benassi logo">
+          <img class="w-32" src="./images/Clientes/logo_benassi.png" alt="benassi logo">
         </div>
 
         <div class="w-28">
-          <img class="w-full" src="./images/Clientes/logo_brasmil.png" alt="bras mil logo">
+          <img class="w-32" src="./images/Clientes/logo_brasmil.png" alt="bras mil logo">
         </div>
 
         <div class="w-28">
-          <img class="w-full" src="./images/Clientes/logo_cortes.svg" alt="cortes logo">
+          <img class="w-80" src="./images/Clientes/logo_cortes.svg" alt="cortes logo">
         </div>
 
         <div class="w-28">
-          <img class="w-full" src="./images/Clientes/logo_imbel.svg" alt="imbel logo">
+          <img class="w-32" src="./images/Clientes/logo_imbel.svg" alt="imbel logo">
         </div>
 
         <div class="w-28">
-          <img class="w-full" src="./images/Clientes/logo_medquimica.png" alt="medquimica logo">
+          <img class="w-32" src="./images/Clientes/logo_medquimica.png" alt="medquimica logo">
         </div>
 
         <div class="w-28">
-          <img class="w-full" src="./images/Clientes/logo_ultraimagem.png" alt="ultraimagem logo">
-        </div> -->
+          <img class="w-32" src="./images/Clientes/logo_ultraimagem.png" alt="ultraimagem logo">
+        </div>
       </div>
+
+
 
 
     </section>
   </main>
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js" defer></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
-  <script type="text/javascript" src="./js/slide.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+    integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.slick-carousel').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    });
+  </script>
 </body>
 
 </html>
