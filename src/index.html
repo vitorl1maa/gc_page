@@ -25,12 +25,26 @@
     <img src="./images/Logos/logo_gc-green.svg" alt="Logo">
 
     <nav class=" flex gap-8 items-center">
-      <ul class="font-medium cursor-pointer hover:text-primary">Sobre</ul>
-      <ul class="font-medium cursor-pointer hover:text-primary">Produtos</ul>
-      <ul class="font-medium cursor-pointer hover:text-primary">Serviços</ul>
-      <ul class="font-medium cursor-pointer hover:text-primary">Softwares</ul>
+      <ul class="font-medium cursor-pointer hover:text-primary">
+        <a href="#sobre">Sobre</a>
+      </ul>
+      <ul class="font-medium cursor-pointer hover:text-primary">
+        <a href="#produtos">
+          Produtos
+        </a>
+      </ul>
+      <ul class="font-medium cursor-pointer hover:text-primary">
+        <a href="#serviços">
+          Serviços
+        </a>
+      </ul>
+      <ul class="font-medium cursor-pointer hover:text-primary">
+        <a href="#softwares">Softwares</a>
+      </ul>
       <ul>
-        <button class="btn-default">Fale conosco</button>
+        <button class="btn-default">
+          <a href="https://api.whatsapp.com/send?phone=553232166447" target="_blank">Fale conosco</a>
+        </button>
       </ul>
     </nav>
   </header>
@@ -52,7 +66,7 @@
 
           <button
             class="mt-8 text-primary bg-white w-60 h-14 rounded-full flex justify-center items-center gap-2 hover:bg-newBlack hover:text-white">
-            Solicitar orçamento
+            <a href="https://api.whatsapp.com/send?phone=553232166447" target="_blank">Solicitar orçamento</a>
             <i class="ph ph-arrow-right text-2xl"></i>
           </button>
         </div>
@@ -101,7 +115,7 @@
       </section>
 
       <!-------- PRODUTOS -------->
-      <section class="w-full h-full flex flex-col items-center mt-96 ">
+      <section id="produtos" class="w-full h-full flex flex-col items-center mt-96 ">
         <h3 class="mt-80 flex gap-5 text-2xl font-bold"> <span><i
               class="ph-fill ph-circle text-[10px] text-secondary"></i></span>
           Produtos populares
@@ -134,10 +148,12 @@
               <div class="flex flex-col gap-3">
 
                 <p class="font-bold text-xl">
-                  REP iDClass
+                  REP iDClasshref
                 </p>
 
-                <button class="btn-default ">Solicitar orçamento</button>
+                <button class="btn-default ">
+                  <a href="https://api.whatsapp.com/send?phone=553232166447" target="_blank">Solicitar orçamento</a>
+                </button>
               </div>
             </div>
 
@@ -156,7 +172,9 @@
                   REP Henry ADV
                 </p>
 
-                <button class="btn-default">Solicitar orçamento</button>
+                <button class="btn-default">
+                  <a href="https://api.whatsapp.com/send?phone=553232166447" target="_blank">Solicitar orçamento</a>
+                </button>
               </div>
             </div>
 
@@ -293,7 +311,7 @@
       </section>
 
       <!-------- SERVIÇOS -------->
-      <section class="w-full h-full  flex flex-col justify-center items-center">
+      <section id="serviços" class="w-full h-full  flex flex-col justify-center items-center">
         <h3 class="mt-32 flex gap-5 text-2xl font-bold"> <span><i
               class="ph-fill ph-circle text-[10px] text-secondary"></i></span>
           Serviços especializados
@@ -359,7 +377,7 @@
       </section>
 
       <!------- SOFTWARES ------->
-      <section class="w-full h-full  flex flex-col justify-center items-center">
+      <section id="softwares" class="w-full h-full  flex flex-col justify-center items-center">
         <h3 class="mt-32 flex gap-5 text-2xl font-bold"> <span><i
               class="ph-fill ph-circle text-[10px] text-secondary"></i></span>
           Softwares Ponto e Acesso
@@ -438,7 +456,8 @@
           </div>
         </div>
 
-        <div class="bg-hero-pattern w-full h-96 bg-contain bg-no-repeat flex justify-center items-center mt-20">
+        <div
+          class="bg-hero-pattern w-full h-96 bg-contain bg-no-repeat bg-center  flex justify-center items-center mt-20">
           <div class="flex items-center justify-center flex-col text-center">
             <span class="uppercase text-white text-[10px] font-bold" style="letter-spacing: .2rem;">Solicite um
               orçamento</span>
@@ -449,7 +468,7 @@
 
             <button
               class="mt-8 text-primary bg-white w-60 h-14 rounded-full flex justify-center items-center gap-2 hover:bg-newBlack hover:text-white">
-              Solicitar orçamento
+              <a href="https://api.whatsapp.com/send?phone=553232166447" target="_blank">Solicitar orçamento</a>
               <i class="ph ph-arrow-right text-2xl"></i>
             </button>
           </div>
@@ -500,7 +519,7 @@
     </div>
 
     <!-------- FOOTER -------->
-    <footer class="w-full bg-newBlack flex justify-between items-center px-5 md:px-40 py-7">
+    <footer class="w-full bg-newBlack flex justify-between items-center px-5 sm:px-24 md:px-40  py-7">
       <div class="w-full flex flex-col">
         <div class="flex justify-between pb-5">
           <div class="flex gap-12">
@@ -551,9 +570,14 @@
           <span class=" border-b" />
         </div>
       </div>
-
-
     </footer>
+
+    <!-- WhatsApp Button -->
+    <div class="relative">
+      <a href="https://api.whatsapp.com/send?phone=553232166447" target="_blank" class="fixed bottom-5 right-5 ">
+        <img src="./images/Logos/fab-whatsapp.svg" alt="WhatsApp">
+      </a>
+    </div>
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
