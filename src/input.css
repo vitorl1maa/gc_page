@@ -55,3 +55,35 @@
   object-fit: cover;
 }
 
+
+/* WhatsApp Button */
+.whatsapp-button {
+  position: fixed;
+  bottom: 5rem;
+  /* Ajuste conforme necessário */
+  right: 5rem;
+  /* Ajuste conforme necessário */
+  animation: bounce 1s infinite;
+  /* Adiciona a animação */
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+    /* Sobe 10px */
+  }
+
+  60% {
+    transform: translateY(-5px);
+    /* Desce um pouco */
+  }
+}
