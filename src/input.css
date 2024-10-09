@@ -33,7 +33,7 @@
 }
 
 .carousel {
-  @apply flex overflow-hidden space-x-4
+  @apply flex overflow-hidden space-x-4 
 }
 
 .carousel-container {
