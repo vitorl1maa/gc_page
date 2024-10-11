@@ -23,13 +23,11 @@
   <!-------- HEADER --------->
   <header class="w-full flex justify-between  container-layout shadow-md relative">
     <img src="./images/Logos/logo_gc-green.svg" alt="Logo" class="h-10">
-    <div class="full">
-    </div>
 
     <!-- Menu de navegação -->
-    <nav id="nav-menu" class="hidden lg:flex w-full justify-end">
+    <nav id="nav-menu" class="hidden md:flex">
       <ul
-        class="font-medium space-y-4 lg:space-y-0 lg:space-x-6 lg:flex cursor-pointer items-center text-center h-screen lg:h-full relative">
+        class="font-medium space-y-4 md:space-y-0 md:space-x-6 md:flex cursor-pointer items-center text-center h-screen md:h-full relative">
         <li>
           <a href="#sobre" class="hover:text-primary flex items-center justify-center">
             <i class="ph-info text-lg mr-2"></i> Sobre
@@ -62,7 +60,7 @@
     </nav>
     <!-- Ícone de menu mobile -->
     <div>
-      <button id="menu-toggle" class="absolute lg:hidden text-3xl focus:outline-none top-6 right-10">
+      <button id="menu-toggle" class="absolute md:hidden text-3xl focus:outline-none top-6 right-10">
         <i class="ph ph-list"></i>
       </button>
     </div>
@@ -72,10 +70,11 @@
     <div class="flex flex-col w-full h-full container-layout">
       <!-------- BANNER -------->
       <section class="relative py-3">
-        <img src="./images/Banner/banner_hero.png" alt="banner" class="w-screen md:h-[700px]">
+        <img src="./images/Banner/banner_hero.png" alt="banner" class="w-screen h-[80vh] md:h-[700px]">
 
         <div class="flex flex-col items-center absolute top-52">
-          <h1 class="w-[720px] text-center md:text-6xl font-bold text-white">Soluções sob medida para sua empresa</h1>
+          <h1 class="w-[720px] text-center text-5xl md:text-6xl font-bold text-white">Soluções sob medida para sua
+            empresa</h1>
 
           <p class="md:w-1/2 mt-8 text-white md:text-xl text-center">
             Há mais de 20 anos oferecendo soluções completas em controle de ponto e acesso. Confie em nossa experiência
@@ -90,8 +89,8 @@
           </button>
         </div>
 
-        <div class="w-full h-full absolute flex items-center">
-          <div class="w-full justify-center flex gap-8 absolute -top-20">
+        <div class="w-full h-full absolute flex items-center justify-center">
+          <div class="w-full justify-center items-center flex gap-8 absolute -top-28 md:-top-20">
             <div class="bg-newWhite w-72 h-80 rounded-lg p-5 ">
               <h3 class="font-bold">Relógio de ponto</h3>
 
@@ -111,7 +110,7 @@
             </div>
           </div>
 
-          <div class="w-full justify-center flex gap-8 absolute mt-52">
+          <div class="w-full justify-center flex gap-8 absolute mt-44 md:mt-52">
             <div class="bg-newWhite w-72 h-80 rounded-lg p-5 ">
               <h3 class="font-bold">Crachás e Acessórios</h3>
 
@@ -149,7 +148,7 @@
         <div class="relative w-full max-w-5xl mx-auto">
           <!-- Botão Anterior -->
           <button id="prevBtn"
-            class="w-10 h-10 absolute -left-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full z-10 shadow-xl">
+            class="w-10 h-10 absolute md:-left-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full z-10 shadow-xl">
             <i class="ph ph-arrow-left text-xl"></i>
           </button>
 
@@ -326,7 +325,7 @@
 
           <!-- Botão Próximo -->
           <button id="nextBtn"
-            class="w-10 h-10 absolute -right-5 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full z-10 shadow-lg">
+            class="w-10 h-10 absolute right-5  md:-right-5 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full z-10 shadow-lg">
             <i class="ph ph-arrow-right text-xl"></i>
           </button>
         </div>
@@ -607,6 +606,7 @@
       </div>
     </footer>
 
+
     <!-- WhatsApp Button -->
     <div class="relative">
       <a href="https://api.whatsapp.com/send?phone=553232166447" target="_blank"
@@ -615,6 +615,7 @@
       </a>
     </div>
   </main>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
