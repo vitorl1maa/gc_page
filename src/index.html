@@ -352,7 +352,8 @@
           Serviços especializados para atender todas as suas demandas
         </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2  w-full h-full justify-items-center justify-center gap-5 mt-20">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2  w-full h-full justify-items-center justify-center gap-5 mt-20 px-28">
           <div class="w-full h-[460px] bg-primary text-white p-5 rounded-xl">
             <img class="w-full" src="./images/Serviços/img_assistencia.png" alt="Assistência técnica">
 
@@ -418,7 +419,7 @@
           Soluções integradas para controle de ponto e acesso sem complicações
         </p>
 
-        <div class="grid grid-cols-3 gap-5 mt-20">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-5 mt-20">
           <div class="w-60 bg-newWhite text-newBlack p-5 rounded-xl">
             <img src="./images/Softwares/img_iponto.png" alt="iPonto Plus">
 
@@ -504,29 +505,29 @@
           </div>
         </div>
 
-        <div class="slick-carousel w-full mt-20 flex justify-around items-center">
+        <div class="slick-carousel w-full mt-20 flex justify-center items-center">
           <div class="w-28">
-            <img class="w-32" src="./images/Clientes/logo_abc.svg" alt="abc logo">
+            <img class="md:w-32" src="./images/Clientes/logo_abc.svg" alt="abc logo">
           </div>
 
           <div class="w-28">
-            <img class="w-32" src="./images/Clientes/logo_acotel.png" alt="acotel logo">
+            <img class="md:w-32" src="./images/Clientes/logo_acotel.png" alt="acotel logo">
           </div>
 
           <div class="w-28">
-            <img class="w-32" src="./images/Clientes/logo_albert-sabin.png" alt="albert sabin logo">
+            <img class="md:w-32" src="./images/Clientes/logo_albert-sabin.png" alt="albert sabin logo">
           </div>
 
           <div class="w-28">
-            <img class="w-32" src="./images/Clientes/logo_bahamas.svg" alt="bahamas logo">
+            <img class="md:w-32" src="./images/Clientes/logo_bahamas.svg" alt="bahamas logo">
           </div>
 
           <div class="w-28">
-            <img class="w-32" src="./images/Clientes/logo_benassi.png" alt="benassi logo">
+            <img class="md:w-32" src="./images/Clientes/logo_benassi.png" alt="benassi logo">
           </div>
 
           <div class="w-28">
-            <img class="w-32" src="./images/Clientes/logo_brasmil.png" alt="bras mil logo">
+            <img class="md:w-32" src="./images/Clientes/logo_brasmil.png" alt="bras mil logo">
           </div>
 
           <div class="w-28">
@@ -534,15 +535,15 @@
           </div>
 
           <div class="w-28">
-            <img class="w-32" src="./images/Clientes/logo_imbel.svg" alt="imbel logo">
+            <img class="md:w-32" src="./images/Clientes/logo_imbel.svg" alt="imbel logo">
           </div>
 
           <div class="w-28">
-            <img class="w-32" src="./images/Clientes/logo_medquimica.png" alt="medquimica logo">
+            <img class="md:w-32" src="./images/Clientes/logo_medquimica.png" alt="medquimica logo">
           </div>
 
           <div class="w-28">
-            <img class="w-32" src="./images/Clientes/logo_ultraimagem.png" alt="ultraimagem logo">
+            <img class="md:w-32" src="./images/Clientes/logo_ultraimagem.png" alt="ultraimagem logo">
           </div>
         </div>
       </section>
@@ -634,6 +635,34 @@
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 3,
+              infinite: true,
+
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
       });
     });
   </script>
