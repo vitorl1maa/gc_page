@@ -13,7 +13,7 @@
 }
 
 .btn-default {
-  @apply bg-gradient-to-b from-primary from-25% to-secondary text-white w-44 text-center h-10 rounded-full 
+  @apply bg-gradient-to-b from-primary from-25% to-secondary text-white text-center rounded-full px-8 py-2
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
@@ -26,6 +26,10 @@
 
 
 /* CAROUSEL */
+
+.slick-next {
+  display: none !important;
+}
 
 .shop-detail {
   border-top-right-radius: 30px;

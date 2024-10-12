@@ -22,12 +22,14 @@
 <body>
   <!-------- HEADER --------->
   <header class="w-full flex justify-between  container-layout shadow-md relative">
-    <img src="./images/Logos/logo_gc-green.svg" alt="Logo" class="h-10">
+    <div class="ml-8">
+      <img src="./images/Logos/logo_gc-green.svg" alt="Logo" class="h-10">
+    </div>
 
     <!-- Menu de navegação -->
     <nav id="nav-menu" class="hidden md:flex">
       <ul
-        class="font-medium space-y-4 md:space-y-0 md:space-x-6 md:flex cursor-pointer items-center text-center h-screen md:h-full relative">
+        class="font-medium text-2xl mt-80 md:mt-0 space-y-4 md:space-y-0 md:space-x-6 md:flex cursor-pointer items-center text-center h-screen md:h-full relative">
         <li>
           <a href="#sobre" class="hover:text-primary flex items-center justify-center">
             <i class="ph-info text-lg mr-2"></i> Sobre
@@ -148,7 +150,7 @@
         <div class="relative w-full max-w-5xl mx-auto">
           <!-- Botão Anterior -->
           <button id="prevBtn"
-            class="w-10 h-10 absolute md:-left-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full z-10 shadow-xl">
+            class="w-10 h-10 absolute left-5 md:-left-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full z-10 shadow-xl">
             <i class="ph ph-arrow-left text-xl"></i>
           </button>
 
@@ -325,7 +327,7 @@
 
           <!-- Botão Próximo -->
           <button id="nextBtn"
-            class="w-10 h-10 absolute right-5  md:-right-5 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full z-10 shadow-lg">
+            class="w-10 h-10 absolute right-3  md:-right-5 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full z-10 shadow-lg">
             <i class="ph ph-arrow-right text-xl"></i>
           </button>
         </div>
@@ -488,7 +490,7 @@
         </div>
 
         <div
-          class="bg-hero-pattern w-full h-96 bg-contain bg-no-repeat bg-center  flex justify-center items-center mt-20">
+          class="bg-hero-pattern w-full h-96 bg-contain bg-no-repeat bg-center flex justify-center items-center mt-20">
           <div class="flex items-center justify-center flex-col text-center">
             <span class="uppercase text-white text-[10px] font-bold" style="letter-spacing: .2rem;">Solicite um
               orçamento</span>
@@ -510,36 +512,36 @@
             <img class="md:w-32" src="./images/Clientes/logo_abc.svg" alt="abc logo">
           </div>
 
-          <div class="w-28">
-            <img class="md:w-32" src="./images/Clientes/logo_acotel.png" alt="acotel logo">
+          <div class="w-28 mt-5">
+            <img class="w-32" src="./images/Clientes/logo_acotel.png" alt="acotel logo">
           </div>
 
           <div class="w-28">
-            <img class="md:w-32" src="./images/Clientes/logo_albert-sabin.png" alt="albert sabin logo">
+            <img class="w-32" src="./images/Clientes/logo_albert-sabin.png" alt="albert sabin logo">
           </div>
 
-          <div class="w-28">
-            <img class="md:w-32" src="./images/Clientes/logo_bahamas.svg" alt="bahamas logo">
+          <div class="w-28 mt-5">
+            <img class="w-32" src="./images/Clientes/logo_bahamas.svg" alt="bahamas logo">
           </div>
 
-          <div class="w-28">
-            <img class="md:w-32" src="./images/Clientes/logo_benassi.png" alt="benassi logo">
+          <div class="w-28 mt-8">
+            <img class="w-32" src="./images/Clientes/logo_benassi.png" alt="benassi logo">
           </div>
 
-          <div class="w-28">
-            <img class="md:w-32" src="./images/Clientes/logo_brasmil.png" alt="bras mil logo">
+          <div class="w-28 mt-5">
+            <img class="w-32" src="./images/Clientes/logo_brasmil.png" alt="bras mil logo">
           </div>
 
-          <div class="w-28">
+          <div class="w-28 mt-5">
             <img class="w-80" src="./images/Clientes/logo_cortes.svg" alt="cortes logo">
           </div>
 
           <div class="w-28">
-            <img class="md:w-32" src="./images/Clientes/logo_imbel.svg" alt="imbel logo">
+            <img class="w-32" src="./images/Clientes/logo_imbel.svg" alt="imbel logo">
           </div>
 
           <div class="w-28">
-            <img class="md:w-32" src="./images/Clientes/logo_medquimica.png" alt="medquimica logo">
+            <img class="w-32" src="./images/Clientes/logo_medquimica.png" alt="medquimica logo">
           </div>
 
           <div class="w-28">
@@ -550,15 +552,15 @@
     </div>
 
     <!-------- FOOTER -------->
-    <footer class="w-full bg-newBlack flex justify-between items-center px-5 sm:px-24 md:px-40  py-7">
+    <footer class="w-full bg-newBlack flex justify-between items-center px-5  md:px-40  py-7">
       <div class="w-full flex flex-col">
-        <div class="flex justify-between pb-5">
+        <div class="flex flex-col md:flex-row justify-between pb-5">
           <div class="flex gap-12">
             <div>
               <img class="w-44" src="./images/Logos/logo_gc-gray.svg" alt="Logo">
             </div>
 
-            <div class="w-[300px]">
+            <div class="w-[300px] inline-block">
               <p class="text-newWhite">
                 Com mais de 20 anos de experiência, somos pioneiros na implementação de soluções inovadoras para gestão
                 de
@@ -568,7 +570,7 @@
             </div>
           </div>
 
-          <ul class="text-newWhite w-[500px] flex flex-col gap-3">
+          <ul class="text-newWhite w-[500px] flex flex-col gap-3 mt-5">
             <li class="flex items-center gap-2">
 
               <i class="ph-thin ph-whatsapp-logo text-xl"></i>
