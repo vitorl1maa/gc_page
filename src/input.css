@@ -59,6 +59,29 @@
   object-fit: cover;
 }
 
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 1rem;
+}
+
+.carousel>div {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: calc(33.33% - 1rem);
+  /* Mostra 3 itens em telas maiores */
+}
+
+/* Ajuste para mobile */
+@media (max-width: 768px) {
+  .carousel>div {
+    width: 100%;
+    /* Mostra apenas 1 item por vez em telas menores */
+  }
+}
+
 
 /* WhatsApp Button */
 .whatsapp-button {
