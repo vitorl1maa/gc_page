@@ -18,21 +18,25 @@ prevBtn.addEventListener("click", () => {
 
 // Função para mostrar todos os produtos ao clicar no botão "Ver mais"
 showProductsBtn.addEventListener("click", () => {
-  carousel.classList.toggle("overflow-hidden"); // Desativa a rolagem oculta
-  carousel.classList.toggle("flex-wrap"); // Faz os itens quebrarem para novas linhas, se necessário
+  carousel.classList.toggle("overflow-hidden");
+  carousel.classList.toggle("flex-wrap");
   carousel.classList.toggle("block");
 
   if (showProductsBtn.innerText === "Ver mais produtos") {
     showProductsBtn.innerText = "Ver menos produtos";
-    showProductsBtn.classList.add("bg-secondary", "text-white"); // Modifica o estilo quando expandido
+    showProductsBtn.classList.add("bg-secondary", "text-white");
     showProductsBtn.classList.remove("text-primary");
-    disableArrows(); // Desativa as setas ao expandir
+
+    disableArrows();
+    carousel.classList.add("justify-center"); // Centraliza os itens quando expandido
   } else {
     showProductsBtn.innerText = "Ver mais produtos";
     showProductsBtn.classList.remove("bg-secondary", "text-white");
     showProductsBtn.classList.add("text-primary");
-    enableArrows(); // Reativa as setas ao voltar ao estado normal
-    checkButtons(); // Verifica o estado das setas após reativá-las
+
+    enableArrows();
+    carousel.classList.remove("justify-center"); // Remove a centralização quando volta ao estado normal
+    checkButtons();
   }
 });
 
