@@ -15,6 +15,11 @@
 .btn-default {
   @apply bg-gradient-to-b from-primary from-25% to-secondary text-white w-[12rem]  text-center h-10 rounded-full
 }
+
+.btn-more {
+  @apply text-xl absolute w-full h-20 bottom-0 px-4 py-2 bg-gradient-to-t bg-primary from-25% text-white rounded-b-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-2xl
+}
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
