@@ -9,11 +9,11 @@
 }
 
 .container-layout {
-  @apply  lg:px-40 py-4
+  @apply  md:px-40 py-4
 }
 
 .btn-default {
-  @apply bg-gradient-to-b from-primary from-25% to-secondary text-white text-center rounded-full px-8 py-2
+  @apply bg-gradient-to-b from-primary from-25% to-secondary text-white w-[12rem]  text-center h-10 rounded-full
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
@@ -37,7 +37,7 @@
 }
 
 .carousel {
-  @apply flex overflow-hidden md:space-x-4 
+  @apply flex overflow-hidden space-x-2 md:space-x-4 
 }
 
 .carousel-container {
