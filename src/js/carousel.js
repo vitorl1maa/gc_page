@@ -2,6 +2,9 @@ const carousel = document.getElementById("carouselContent");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 const showProductsBtn = document.getElementById("showProducts");
+const menu = document.getElementById("nav-menu");
+const menuToggle = document.getElementById("menu-toggle");
+const navItems = document.querySelectorAll(".nav-item");
 
 let scrollStep = 200; // Tamanho de cada item no carrossel
 
@@ -38,6 +41,20 @@ showProductsBtn.addEventListener("click", () => {
     carousel.classList.remove("justify-center"); // Remove a centralização quando volta ao estado normal
     checkButtons();
   }
+});
+
+// Abre e fecha o menu mobile ao clicar no ícone
+menuToggle.addEventListener("click", () => {
+  menu.classList.toggle("hidden");
+});
+
+// Fecha o menu ao clicar em qualquer item da lista (apenas no mobile)
+navItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    if (window.innerWidth < 900) {
+      menu.classList.add("hidden"); // Fecha o menu
+    }
+  });
 });
 
 // Função para desabilitar botões quando necessário
