@@ -8,6 +8,10 @@
   font-family: "Inter";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container-layout {
   @apply  md:px-40 py-4
 }
@@ -81,9 +85,9 @@
 .whatsapp-button {
   position: fixed;
   bottom: 5rem;
-  /* Ajuste conforme necessário */
-  right: 5rem;
-  /* Ajuste conforme necessário */
+  
+  right: 3rem;
+  
   animation: bounce 1s infinite;
   /* Adiciona a animação */
 }

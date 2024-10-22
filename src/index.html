@@ -9,6 +9,7 @@
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <script src="./js/carousel.js" defer></script>
   <script src="./js/menuMobile.js" defer></script>
+  <script src="./js/scrollSmooth.js" defer></script>
 
   <!-- Slick CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
@@ -76,7 +77,7 @@
           <img src="./images/Banner/banner_hero.png" alt="banner" class="w-screen h-[100vh] md:h-[700px]">
         </div>
 
-        <div class="flex flex-col items-center justify-start absolute top-52">
+        <div class="flex flex-col items-center justify-start absolute top-32">
           <h1 class="md:w-[720px] text-center text-4xl md:text-6xl font-bold text-white">Soluções sob medida <br> para
             sua
             empresa</h1>
@@ -95,13 +96,13 @@
         </div>
 
         <div class="w-full h-full absolute md:flex items-center justify-center hidden">
-          <div class="w-full justify-center items-center flex gap-8 absolute -top-28 md:-top-20">
+          <div class="w-full justify-center items-center flex gap-8 absolute -top-28 md:-top-36">
             <div class="bg-newWhite w-80 h-[24rem] rounded-lg p-5 hover:bg-gray-100">
               <h3 class="font-bold text-2xl p-2 text-newBlack">Relógio de ponto</h3>
               <img src="./images/Produtos/item_idclass.png" alt="ID Class">
             </div>
 
-            <div class="bg-newWhite w-80 h-[300px] rounded-lg p-5 hover:bg-gray-100">
+            <div class="bg-newWhite w-80 h-[350px] rounded-lg p-5 hover:bg-gray-100 mb-8">
               <h3 class="font-bold text-2xl p-2 text-newBlack">Softwares</h3>
               <img src="./images/Produtos/img_card-softwares.png" alt="Softwares">
             </div>
@@ -112,8 +113,8 @@
             </div>
           </div>
 
-          <div class="w-full justify-center flex gap-8 absolute mt-44 md:mt-80">
-            <div class="bg-newWhite w-80 h-80 rounded-lg p-5 hover:bg-gray-100">
+          <div class="w-full justify-center flex gap-8 absolute mt-44 md:mt-52">
+            <div class="bg-newWhite w-80 h-[365px] rounded-lg p-5 hover:bg-gray-100">
               <h3 class="font-bold text-2xl p-2 text-newBlack">Crachás e Acessórios</h3>
               <img src="./images/Produtos/img_card-crachas-acessorios.png" alt="ID Class">
             </div>
@@ -123,7 +124,7 @@
               <img src="./images/Produtos/img_card-catracas (1).png" alt="Catracas">
             </div>
 
-            <div class="bg-newWhite w-80 h-80 rounded-lg p-5 hover:bg-gray-100">
+            <div class="bg-newWhite w-80 h-[365px] rounded-lg p-5 hover:bg-gray-100">
               <h3 class="font-bold text-2xl p-2 text-newBlack">Peças e Suprimentos</h3>
               <img src="./images/Produtos/img_card-suprimentos.png" alt="Suprimentos">
             </div>
@@ -200,7 +201,9 @@
           <!-- Botão Anterior -->
           <button id="prevBtn"
             class="w-10 h-10 absolute left-2 md:-left-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full z-10 shadow-xl">
-            <i class="ph ph-arrow-left text-xl"></i>
+            <span class="absolute left-0 right-0 top-[10px]">
+              <i class="ph ph-arrow-left text-xl"></i>
+            </span>
           </button>
 
           <!-- Container do Carrossel -->
@@ -376,8 +379,10 @@
 
           <!-- Botão Próximo -->
           <button id="nextBtn"
-            class="w-10 h-10 absolute right-3  md:right-2 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full z-10 shadow-lg">
-            <i class="ph ph-arrow-right text-xl"></i>
+            class="w-10 h-10 absolute right-3  md:-right-3 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full z-10 shadow-lg">
+            <span class="absolute left-0 right-0 top-[10px]">
+              <i class="ph ph-arrow-right text-xl"></i>
+            </span>
           </button>
         </div>
 
@@ -392,21 +397,21 @@
       </section>
 
       <!-------- SERVIÇOS -------->
-      <section id="serviços" class="w-full h-full  flex flex-col justify-center items-center">
+      <section id="servicos" class="w-full h-full  flex flex-col justify-center items-center">
         <h3 class="mt-32 flex gap-5 text-2xl font-bold"> <span><i
               class="ph-fill ph-circle text-[10px] text-secondary"></i></span>
           Serviços especializados
           <span><i class="ph-fill ph-circle text-[10px] text-secondary"></i></span>
         </h3>
 
-        <p>
+        <p class="text-center mt-5 px-5">
           Serviços especializados para atender todas as suas demandas
         </p>
 
         <div
-          class="grid grid-cols-1 md:grid-cols-2 w-full h-full justify-items-center justify-center gap-8 mt-20 px-5 lg:px-0">
+          class="grid grid-cols-1 md:grid-cols-2 w-full md:h-full justify-items-center justify-center gap-8 mt-20 px-5 lg:px-0">
           <div
-            class="w-full h-[530px] bg-primary text-white p-5 rounded-xl transition-transform duration-500 ease-in-out hover:scale-105 hover:opacity-90">
+            class="w-full md:h-[530px] bg-primary text-white p-5 rounded-xl transition-transform duration-500 ease-in-out hover:scale-105 hover:opacity-90">
             <img class="w-full" src="./images/Serviços/img_assistencia.png" alt="Assistência técnica">
             <h3 class="text-3xl font-bold py-5 px-3">Assistência técnica</h3>
             <p class="text-lg leading-7 px-3">
@@ -421,7 +426,7 @@
           </div>
 
           <div
-            class="w-full h-[460px] bg-newWhite text-newBlack p-5 rounded-xl transition-transform duration-500 ease-in-out hover:scale-105 hover:opacity-90">
+            class="w-full md:h-[480px] bg-newWhite text-newBlack p-5 rounded-xl transition-transform duration-500 ease-in-out hover:scale-105 hover:opacity-90">
             <img class="w-full md:hover" src="./images/Serviços/img_suporte.png" alt="Suporte Técnico">
             <h3 class="text-3xl font-bold py-5 px-3">Suporte Técnico</h3>
             <p class="text-lg leading-7 text-newBlack/65 px-3">
@@ -433,7 +438,7 @@
           </div>
 
           <div
-            class="w-full h-[460px] bg-newWhite text-newBlack p-6 rounded-xl transition-transform duration-500 ease-in-out hover:scale-105 hover:opacity-90">
+            class="w-full md:h-[480px] bg-newWhite text-newBlack p-6 rounded-xl transition-transform duration-500 ease-in-out hover:scale-105 hover:opacity-90">
             <img class="w-full" src="./images/Serviços/img_atendimento.png" alt="Atendimento local">
             <h3 class="text-3xl font-bold py-5 px-3">Atendimento local</h3>
             <p class="text-lg leading-7 text-newBlack/65 px-3">
@@ -445,7 +450,7 @@
           </div>
 
           <div
-            class="w-full h-[500px] bg-newWhite text-newBlack p-5 rounded-xl relative -top-12 transition-transform duration-500 ease-in-out hover:scale-105 hover:opacity-90">
+            class="w-full md:h-[500px] bg-newWhite text-newBlack p-5 rounded-xl relative md:-top-12 transition-transform duration-500 ease-in-out hover:scale-105 hover:opacity-90">
             <img class="w-full" src="./images/Serviços/img_suprimentos.png" alt="Peças e suprimentos">
             <h3 class="text-3xl font-bold py-5 px-3">Peças e suprimentos</h3>
             <p class="text-lg leading-7 text-newBlack/65 px-3">
@@ -462,14 +467,14 @@
       </section>
 
       <!------- SOFTWARES ------->
-      <section id="softwares" class="w-full h-full  flex flex-col justify-center items-center">
-        <h3 class="mt-28 flex gap-5 text-3xl font-bold text-newBlack"> <span><i
+      <section id="softwares" class="w-full h-full  flex flex-col justify-center items-center text-center">
+        <h3 class="mt-28 flex gap-5 text-3xl font-bold text-newBlack px-5"> <span><i
               class="ph-fill ph-circle text-[10px] text-secondary"></i></span>
           Softwares Ponto e Acesso
           <span><i class="ph-fill ph-circle text-[10px] text-secondary"></i></span>
         </h3>
 
-        <p class="mt-5 text-center text-xl text-newBlack/65">
+        <p class="mt-5 text-center text-xl text-newBlack/65 px-5">
           Soluções integradas para controle de ponto e acesso sem complicações
         </p>
 
@@ -585,12 +590,13 @@
         </div>
 
 
-        <div class="mt-20 relative px-5">
+        <div id="sobre" class="mt-20 relative px-5 h-[900px]">
           <img class="h-[400px] w-full md:h-full" src="./images/Banner/CTA.png" alt="">
           <div class="flex items-center justify-center flex-col text-center absolute z-20 bottom-16 right-0 left-0">
-            <span class="uppercase text-white text-[10px] font-bold" style="letter-spacing: .2rem;">Solicite um
+            <span class="uppercase text-white text-[10px] font-bold">Solicite um
               orçamento</span>
-            <h1 class="text-2xl md:text-3xl font-bold text-white mt-5">Entre em contato e receba uma proposta <br /> sob
+            <h1 class="w-80 text-xl md:text-3xl font-bold text-white mt-5">Entre em contato e receba uma proposta <br />
+              sob
               medida
               para
               sua
@@ -622,11 +628,11 @@
             <img class="w-full" src="./images/Clientes/logo_bahamas.png" alt="bahamas logo">
           </div>
 
-          <div class="w-28">
+          <div class="w-28 ml-8">
             <img class="w-full" src="./images/Clientes/logo_benassi.png" alt="benassi logo">
           </div>
 
-          <div class="w-28">
+          <div class="w-28 ml-5">
             <img class="w-full" src="./images/Clientes/logo_brasmil.png" alt="brasmil logo">
           </div>
 
@@ -677,11 +683,19 @@
             </li>
 
 
-            <li class="flex items-center gap-2">
-              <i class="ph-thin ph-at"></i>
-              <a href="">
-                vendas@gctenologia.com.br
-              </a>
+            <li class="flex items-center gap-12">
+              <div>
+                <i class="ph-thin ph-at"></i>
+                <a href="">
+                  vendas@gctenologia.com.br
+                </a>
+              </div>
+              <div>
+                <i class="ph-fill ph-instagram-logo"></i>
+                <a href="https://www.instagram.com/oficialgctecnologia/?igsh=OXl1YWo2Z3lmZGVy" target="_blank">
+                  @oficialgctecnologia
+                </a>
+              </div>
             </li>
 
             <li class="flex items-center gap-2">
@@ -690,12 +704,9 @@
                 R. Frederico Lage, 70 - Mariano Procópio - Juiz de Fora - MG
               </a>
             </li>
-            <li><i class="ph-fill ph-instagram-logo"></i>
-              <a href="https://www.instagram.com/oficialgctecnologia/?igsh=OXl1YWo2Z3lmZGVy" target="_blank">
-                @oficialgctecnologia
-              </a>
-            </li>
+
           </ul>
+
         </div>
 
         <div class="w-full flex flex-col-reverse text-center">
@@ -768,9 +779,9 @@
 
 
     <!-- WhatsApp Button -->
-    <div class="relative">
+    <div class="hidden md:relative">
       <a href="https://api.whatsapp.com/send?phone=553232166447" target="_blank"
-        class="fixed bottom-5 right-5 whatsapp-button">
+        class="md:fixed bottom-5 right-5 whatsapp-button">
         <img src="./images/Logos/fab-whatsapp.svg" alt="WhatsApp">
       </a>
     </div>
@@ -814,7 +825,7 @@
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 2,
               slidesToScroll: 1
             }
           }
