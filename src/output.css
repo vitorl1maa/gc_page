@@ -858,6 +858,10 @@ video {
   align-items: flex-start;
 }
 
+.items-end{
+  align-items: flex-end;
+}
+
 .items-center{
   align-items: center;
 }
@@ -1211,6 +1215,8 @@ html {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-from-position: 25%;
   --tw-gradient-to: #025956 var(--tw-gradient-to-position);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   text-align: center;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1219,6 +1225,8 @@ html {
 @media (min-width: 768px){
   .btn-default{
     width: 12rem;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
